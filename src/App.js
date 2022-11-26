@@ -1,16 +1,17 @@
-import Counter from "pages/Counter";
-import Main from "pages/Main";
+import Header from "components/commons/Header";
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Home from "pages/Home";
+import "./App.css"
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
+      <Header />
       <Routes>
-        <Route path="/" element={<Main />}></Route>
-        <Route path="/counter" element={<Counter />}></Route>
+        <Route path="/" element={<Home/>} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
