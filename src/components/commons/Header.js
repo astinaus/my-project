@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from "./NavElements";
+import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from "../NavBar/NavElements";
 
 const Header = () => {
   return (
