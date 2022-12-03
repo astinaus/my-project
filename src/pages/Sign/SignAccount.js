@@ -2,7 +2,7 @@ import React from 'react'
 
 const SignAccount = () => {
   return (
-    <form>
+    <form className='form-align-center'>
       <label htmlFor='email'>이메일</label>
       <input
         id='email'

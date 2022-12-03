@@ -4502,10 +4502,10 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
 
-bootstrap@^5.2.2:
-  version "5.2.2"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.2.2.tgz#834e053eed584a65e244d8aa112a6959f56e27a0"
-  integrity sha512-dEtzMTV71n6Fhmbg4fYJzQsw1N29hJKO1js5ackCgIpDcGid2ETMGC6zwSYw09v05Y+oRdQ9loC54zB1La3hHQ==
+bootstrap@^5.2.3:
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.2.3.tgz#54739f4414de121b9785c5da3c87b37ff008322b"
+  integrity sha512-cEKPM+fwb3cT8NzQZYEu4HilJ3anCrWqh3CHAok1p9jXqMPsPTBhU25fBckEJHJ/p+tTxTFTsFQGM+gaHpi3QQ==
 
 boxen@^4.2.0:
   version "4.2.0"
@@ -13612,6 +13612,11 @@ react-hook-form@^7.40.0:
   resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.40.0.tgz#62bc939dddca88522cd7f5135b6603192ccf7e17"
   integrity sha512-0rokdxMPJs0k9bvFtY6dbcSydyNhnZNXCR49jgDr/aR03FDHFOK6gfh8ccqB3fl696Mk7lqh04xdm+agqWXKSw==
 
+react-hook@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/react-hook/-/react-hook-0.0.1.tgz#decb8a9f8cedcc88223d3c45853f32366f8cb4a5"
+  integrity sha512-2/Guf88/dGyFgUT7QDtBJ1l7V5yqTcAHlNRIZNTu2xg0KkDjaiYZp79ah49NDaLMI/J7voWcKLU8wMONG4A/1g==
+
 react-hooks-form@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/react-hooks-form/-/react-hooks-form-2.0.1.tgz#bcd415cc8b069520b847bc87b11598165490c5e3"
@@ -13619,6 +13624,11 @@ react-hooks-form@^2.0.1:
   dependencies:
     lodash "^4.17.11"
     prop-types "15.6.2"
+
+react-hooks@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-hooks/-/react-hooks-1.0.1.tgz#e62197c38cd8d0703060f791234f7f4698aa7c44"
+  integrity sha512-PXU08tw4SvKwkW99qgnyV98x939RCmBC6aXqALPQXPjKq6+6EoH79Rz4KdUozzlpSyWmn2IiEm0vh3p+79aP5w==
 
 react-icons@^4.6.0:
   version "4.6.0"
