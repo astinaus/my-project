@@ -6,7 +6,6 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
-
   const getMovies = () => {
     axios
       .get(
@@ -57,24 +56,7 @@ const Home = () => {
                         <Carousel.Caption></Carousel.Caption>
                       </Carousel.Item>
                     );
-                    {
-                      /* <Carousel.Item interval={500}>
-                  <img
-                  className="d-block w-200"
-                  // src={`https://image.tmdb.org/t/p/w200${movies.poster_path}`}
-                  alt="Second slide"
-                  />
-                  <Carousel.Caption></Carousel.Caption>
-                  </Carousel.Item>
-                  <Carousel.Item interval={500}>
-                  <img
-                  className="d-block w-200"
-                  // src={`https://image.tmdb.org/t/p/w200${movies.poster_path}`}
-                  alt="Third slide"
-                  />
-                  <Carousel.Caption></Carousel.Caption>
-                </Carousel.Item> */
-                    }
+                    
                   })}
               </Carousel>
             </Col>
