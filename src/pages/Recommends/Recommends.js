@@ -1,8 +1,9 @@
 import React from 'react'
+import { Main } from './RecommendsElements'
 
 const Recommends = () => {
   return (
-    <div>Recommends</div>
+    <Main>Recommends</Main>
   )
 }
 

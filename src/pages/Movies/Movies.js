@@ -1,8 +1,9 @@
 import React from 'react'
+import { Main } from './MoviesElements'
 
 const Movies = () => {
   return (
-    <div>Movies</div>
+    <Main>Movies</Main>
   )
 }
 

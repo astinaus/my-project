@@ -11,9 +11,13 @@ const randomIndex = Math.floor(Math.random() * bgArray.length);
 const backgroundImg = bgArray[randomIndex];
 
 export const Bg = styled.div`
+  padding-top: 80px;
   height: 100vh;
   text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   ::before {
     content: "";
     background: URL(${backgroundImg}) no-repeat;

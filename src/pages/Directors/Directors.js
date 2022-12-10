@@ -1,8 +1,9 @@
 import React from 'react'
+import { Main } from './DirectorsElements'
 
 const Directors = () => {
   return (
-    <div>Directors</div>
+    <Main>Directors</Main>
   )
 }
 

@@ -1,9 +1,0 @@
-.layout {
-    // header 길이만큼 padding을 추가해 메인페이지를 가리지 않게
-    padding-top: 80px;
-}
-
-.main {
-    // 스크롤 길이 상관없이 footer 최하단 고정
-    min-height: calc(100vh - 180px);
-}
