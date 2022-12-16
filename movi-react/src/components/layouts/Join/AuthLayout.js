@@ -1,5 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+const Main = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+`;
 
 const AuthLayoutWrapper = styled.div`
   position: absolute;
@@ -24,21 +30,23 @@ const ContainerBox = styled.div`
   padding: 2rem;
   width: 360px;
   background: white;
-  border-radius: 2px;
+  border-radius: 5px;
 `;
 
 const AuthLayout = ({ children }) => {
   return (
-    <AuthLayoutWrapper>
-      <ContainerBox>
-        <div className="logo-area">
-          <a href="/">
-            <img src="./logo.png" alt="logo"></img>
-          </a>
-        </div>
-        {children}
-      </ContainerBox>
-    </AuthLayoutWrapper>
+    <Main>
+      <AuthLayoutWrapper>
+        <ContainerBox>
+          <div className="logo-area">
+            <a href="/">
+              <img src="./logo.png" alt="logo"></img>
+            </a>
+          </div>
+          {children}
+        </ContainerBox>
+      </AuthLayoutWrapper>
+    </Main>
   );
 };
 
