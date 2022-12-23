@@ -12,8 +12,9 @@ const backgroundImg = bgArray[randomIndex];
 
 export const Bg = styled.div`
   padding-top: 80px;
-  height: 100vh;
-  text-align: center;
+  height: 150vh;
+  align-items: center;
+  justify-contents: center;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -36,4 +37,5 @@ export const MainText = styled.div`
   justify-content: center;
   font-size: 32;
   position: relative;
+  
 `;
