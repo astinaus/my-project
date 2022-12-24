@@ -15,5 +15,12 @@ code {
 
 .slick-slide {
   padding-left: 15px ; 
+  padding-right: 15px;
+  transition: all 0.2s linear;
 }
 
+.slick-slide:hover {
+  transform: scale(1.1);
+}
+
+ 

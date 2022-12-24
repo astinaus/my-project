@@ -14,7 +14,43 @@ const settings = {
   slidesToScroll: 1,
   vertical: false,
   autoplay: true,
-  pauseOnHover: true,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 990,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 765,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 580,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 100,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 };
 
 const NowPlayingMovies = () => {
@@ -47,8 +83,8 @@ const NowPlayingMovies = () => {
     <Container>
       <Slider {...settings}>
         {nowPlaying.results &&
-          nowPlaying.results.map((results) => (
-            <Col>
+          nowPlaying.results.map((results, index) => (
+            <Col key={index}>
               <Card className="w-100 h-100 mb-5">
                 <Card.Img
                   style={{ width: "100%", height: "320px" }}
@@ -61,20 +97,20 @@ const NowPlayingMovies = () => {
                     width: "100%",
                     height: "130px",
                     backgroundColor: "black",
+                    color: "white",
                   }}
                 >
                   <Card.Title
                     style={{
-                      color: "white",
-                      fontSize: "17px",
+                      fontSize: "16px",
                       fontWeight: "bold",
                     }}
                   >
                     <div>{results.title}</div>
                   </Card.Title>
-                  <Card.Text style={{ color: "white" }}>
-                    <p>개봉일 : {results.release_date}</p>
-                    <p>평점 : {results.vote_average}</p>
+                  <Card.Text style={{ fontSize: "14px" }}>
+                    <div>개봉일 : {results.release_date}</div>
+                    <div>평점 : {results.vote_average}/10</div>
                   </Card.Text>
                 </Card.Body>
               </Card>

@@ -15,7 +15,43 @@ const settings = {
   slidesToScroll: 1,
   vertical: false,
   autoplay: true,
-  pauseOnHover: true,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 1060,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 765,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 580,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 100,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 };
 const PopularMovies = () => {
   const [Popular, setPopular] = useState([]);
@@ -45,11 +81,11 @@ const PopularMovies = () => {
 
   return (
     <Container>
-      <Slider {...settings} className="">
+      <Slider {...settings}>
         {Popular.results &&
-          Popular.results.map((results) => (
-            <Col>
-              <Card className="w-100 h-100 border-rounded">
+          Popular.results.map((results, index) => (
+            <Col key={index}>
+              <Card className="w-100 h-100 mb-5">
                 <Card.Img
                   style={{ width: "100%", height: "320px" }}
                   variant="top"
@@ -64,12 +100,18 @@ const PopularMovies = () => {
                     color: "white",
                   }}
                 >
-                  <Card.Title style={{ fontSize: "17px", fontWeight: "bold" }}>
+                  <Card.Title
+                    style={{
+                      fontSize: "16px",
+                      fontWeight: "bold",
+                    }}
+                  >
                     <div>{results.title}</div>
                   </Card.Title>
-                  <Card.Text>
-                    <p>개봉일 : {results.release_date}</p>
-                    <p>평점 : {results.vote_average}</p>
+
+                  <Card.Text style={{ fontSize: "14px" }}>
+                    <div>개봉일 : {results.release_date}</div>
+                    <div>평점 : {results.vote_average}/10</div>
                   </Card.Text>
                 </Card.Body>
               </Card>

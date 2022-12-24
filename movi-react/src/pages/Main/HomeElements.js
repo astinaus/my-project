@@ -12,7 +12,7 @@ const backgroundImg = bgArray[randomIndex];
 
 export const Bg = styled.div`
   padding-top: 80px;
-  height: 150vh;
+  height: 160vh;
   align-items: center;
   justify-contents: center;
   position: relative;
